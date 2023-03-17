@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Frameset Example</title>
+
+  </head>
+  <frameset cols="30%,40%,30%">
+    <frame src="/page/lab_1/frame1.html" name="frame1" scrolling="auto" noresize>
+    <frame src="/page/lab_1/frame2.html" name="frame2" scrolling="auto" noresize>
+    <frame src="/page/lab_1/frame3.html" name="frame3" scrolling="auto" noresize>
+  </frameset>
+  <body style="background-color: rgb(79, 79, 79);">
+    <script>
+      function changeTitle(title) {
+          var topFrame = window.parent.document.getElementById("top");
+          topFrame.document.title = title;
+        }
+        </script>
+  </body>
+  
+</html>

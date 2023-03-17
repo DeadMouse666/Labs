@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body style="background-image: url(https://cdn.create.vista.com/api/media/small/417511084/stock-photo-abstract-texture-dust-flake-snow);">
+
+      <div class="container">
+
+        <ul class="menu">
+          <li>
+            <a href="#">Нtml</a>
+            <ul>
+                <li><a href="/page/lab_1/lab_1.html" target="right-frame" onclick="changeTitle('Тема:Мова розмітки гіпертекстових сторінок (HTML). Форматування тексту.'),loadPage('/page/lab_1/lab_1.html')">1.1</a></li>
+                <li><a href="/page/lab_1A/lab_1A.html" target="right-frame" onclick="changeTitle('Тема:Фрейми'),loadPage('/page/lab_1A/lab_1A.html')">1.1A</a></li>
+                <li><a href="/page/lab2/lab_2.html" target="right-frame" onclick="changeTitle('Тема:Таблиці'),loadPage('/page/lab2/lab_2.html')">1.2</a></li>
+                <li><a href="/page/lab2A/index.html" target="right-frame" onclick="changeTitle('Тема: Створення сайту з використанням блочних елементів'),loadPage('/page/lab2A/index.html')">1.2A</a></li>
+                <li><a href="/page/lab3/main.html" target="right-frame" onclick="changeTitle('Тема:Каскадні таблиці стилів'),loadPage('/page/lab3/main.html')">1.3</a></li>
+                <li><a href="/page/lab4/index.html" target="right-frame" onclick="changeTitle('Тема:Форми'),loadPage('/page/lab4/index.html')">1.4</a></li>
+              </ul>
+            
+          </li>
+          <li>
+            <a href="#">Xml</a>
+            <ul>
+              <li><a href="#">2.1</a></li>
+              <li><a href="#">2.2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Java Script</a>
+            <ul>
+              <li><a href="#">3.1</a></li>
+              <li><a href="#">3.2</a></li>
+              <li><a href="#">3.3</a></li>
+              <li><a href="#">3.4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Інтернет магазин</a>
+          </li>
+          <li>
+            <a href="#">рнр</a>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        function loadPage(pageName) {
+          var rightFrame = parent.document.getElementById("right");
+          rightFrame.src = pageName;
+        }
+      </script>
+      <script>
+   function changeTitle(title) {
+    var topFrame = parent.document.getElementById("top");
+    var header = topFrame.contentDocument.querySelector("h1");
+    header.innerHTML = title;
+    }
+      </script>
+</body>
+</html>
